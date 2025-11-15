@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char s[25];
+    int x = 0;
+    int y = 0;
+    int i = 0;
+
+    scanf("%s", s);
+
+    while (s[i] == 'z') {
+        x++;
+        i++;
+    }
+
+    while (s[i] == 'o') {
+        y++;
+        i++;
+    }
+
+    if (2 * x == y && s[i] == '\0') {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
+    }
+
+    return 0;
+}
